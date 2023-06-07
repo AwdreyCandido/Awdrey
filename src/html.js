@@ -12,11 +12,17 @@ export default function HTML(props) {
                     name="viewport"
                     content="width=device-width, initial-scale=1, shrink-to-fit=no"
                 />
+                {/* FONT LINKS */}
+                <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
+                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
+                <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
+                <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
                 <title>Awdrey | Front-End Developer</title>
                 {props.headComponents}
 
             </head>
-            <body  {...props.bodyAttributes}>
+            <body className="dark:bg-darkgray dark:text-golden" {...props.bodyAttributes}>
                 {props.preBodyComponents}
                 <div
                     key={`body`}
