@@ -16,9 +16,11 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@types/react-icons": "^3.0.0",
     "gatsby": "^5.10.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.9.0"
   },
   "devDependencies": {
     "@types/node": "^20.2.5",

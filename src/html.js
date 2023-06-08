@@ -22,7 +22,7 @@ export default function HTML(props) {
                 {props.headComponents}
 
             </head>
-            <body className="dark:bg-darkgray dark:text-golden" {...props.bodyAttributes}>
+            <body className="dark:bg-darkgray dark:text-white duration-200" {...props.bodyAttributes}>
                 {props.preBodyComponents}
                 <div
                     key={`body`}

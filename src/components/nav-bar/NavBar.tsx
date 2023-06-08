@@ -3,12 +3,10 @@ import React, { useEffect, useState } from "react";
 import { Link } from "gatsby";
 import PrimaryButton from "../buttons/primary-button/PrimaryButton";
 import Switch from "../switch/Switch";
+import { HiOutlineCode } from "react-icons/hi";
 
 const NavBar = () => {
   const [theme, setTheme] = useState<string>("light");
-
-  const url = global.location.href;
-  const path = url.replace(global.location.origin, "");
 
   useEffect(() => {
     if (theme === "dark") {
@@ -23,8 +21,11 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="flex items-baseline justify-between text-base px-16 py-6 font-sora border-b border-b-slate-200 dark:border-b-[#363636] dark:text-golden ">
-      <h4 className="uppercase">Awdrey</h4>
+    <nav className="flex items-center justify-between text-base px-16 py-6 font-sora border-b border-b-slate-200 dark:border-b-[#363636] dark:text-golden ">
+      <h4 className="flex items-center gap-8">
+        <HiOutlineCode className="text-[2.5rem]" />
+        Awdrey
+      </h4>
       <ul className="flex gap-12">
         <li className="relative hover:font-semibold duration-100">
           <a href="/#projects" className="peer bg-white dark:bg-darkgray">
