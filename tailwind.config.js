@@ -23,7 +23,9 @@ module.exports = {
       colors: {
         "golden": "#FFD866",
         "darkgray": "#242424",
+        "gray-border": "#363636",
         "lightgray": "#e2e2e2",
+        "darkwhite": "#f9f9f9",
         "crimson": "#DC143C",
         black: {
           20: "#00000033",
@@ -52,6 +54,31 @@ module.exports = {
         flip: {
           '0%, 50%': { transform: 'rotate(90deg)' },
           '100%': { transform: 'rotate(90deg)' },
+        },
+        rotate: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+        "rotate-back": {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(-360deg)' },
+        },
+        move: {
+          "0%%": {
+            transform: "translate(0, 0)"
+          },
+          "25%": {
+            transform: "translate(5px, 54px)"
+          },
+          "50%": {
+            transform: "translate(30px, -4px)"
+          },
+          "75%": {
+            transform: "translate(-5px, -0px)"
+          },
+          "100%": {
+            transform: "translate(0, 0)"
+          },
         }
       },
       animation: {
@@ -59,6 +86,12 @@ module.exports = {
         breathe: 'breathe 4s ease-in-out infinite',
         flip: 'flip 1s ease-in-out',
         zoom: 'zoom 0.5s ease',
+        move: 'move 3s infinite ease',
+        rotate: 'rotate 30s linear infinite',
+        "rotate-back": 'rotate-back 30s linear infinite',
+      },
+      boxShadow: {
+        'input': '0 0 6px 0 rgba(0, 0, 0, 0.2)',
       }
     },
   },

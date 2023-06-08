@@ -3,7 +3,7 @@ import ContactForm from "../contact-form/ContactForm";
 
 const MainContact = () => {
   return (
-    <section id="#contact" className="flex justify-between py-8  px-[11rem]">
+    <section id="contact" className="flex justify-between py-8  px-[11rem]">
       <p className="text-tertiary-h">Ask me anything or just say hi 👋...</p>
       <ContactForm />
     </section>

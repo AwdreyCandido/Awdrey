@@ -28,9 +28,9 @@ const NavBar = () => {
       </h4>
       <ul className="flex gap-12">
         <li className="relative hover:font-semibold duration-100">
-          <a href="/#projects" className="peer bg-white dark:bg-darkgray">
+          <Link to="/#projects" className="peer bg-white dark:bg-darkgray">
             Projects
-          </a>
+          </Link>
           <div className="bg-black w-[1.6rem] h-[.3rem] top-0 left-[50%] -translate-x-[50%] rounded-xl absolute -z-10 mt-[0.3rem] invisible peer-hover:visible  peer-hover:top-[100%] duration-300 " />
         </li>
         <li className="relative hover:font-semibold duration-100">

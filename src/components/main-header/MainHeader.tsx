@@ -1,11 +1,22 @@
 import React from "react";
 import PrimaryButton from "../buttons/primary-button/PrimaryButton";
 
+import reactLogo from "./../../images/react.png";
+import reactNativeLogo from "./../../images/react-native.png";
+import javascriptLogo from "./../../images/javascript.png";
+import sassLogo from "./../../images/sass.png";
+import typescriptLogo from "./../../images/typescript.png";
+import tailwindLogo from "./../../images/tailwind.png";
+import dockerLogo from "./../../images/docker.png";
+
 import {
   AiOutlineGithub,
   AiOutlineLinkedin,
   AiOutlineInstagram,
 } from "react-icons/ai";
+import JsTechCircle from "../tech-circles/JsTechCircle";
+import CssTechCircle from "../tech-circles/CssTechCircle";
+import DevOpsTechCircle from "../tech-circles/DevOpsTechCircle";
 
 const MainHeader = () => {
   return (
@@ -58,12 +69,24 @@ const MainHeader = () => {
       </section>
       <section className="relative flex items-center h-[60rem] border-b-2 border-b-slate-200 dark:border-b-[#363636] border-dashed  w-full">
         <div className="relative h-[45rem] w-[45rem] left-[15%] bg-[#e2e2e2]  dark:bg-white rounded-full"></div>
-        <div className="h-[9rem] w-[9rem] bg-lightgray dark:bg-white shadow-xl animate-breathe rounded-full absolute right-[30%] top-[10%]"></div>
-        <div className="h-[8rem] w-[8rem] bg-lightgray dark:bg-white shadow-xl animate-breathe rounded-full absolute left-[10%] top-[25%]"></div>
-        <div className="h-[9rem] w-[9rem] bg-lightgray dark:bg-white shadow-xl animate-breathe rounded-full absolute left-[25%] top-[5%]"></div>
-        <div className="h-[7rem] w-[7rem] bg-lightgray dark:bg-white shadow-xl animate-breathe rounded-full absolute right-[20%] top-[35%]"></div>
-        <div className="h-[10rem] w-[10rem] bg-lightgray dark:bg-white shadow-xl animate-breathe rounded-full absolute left-[25%] top-[65%]"></div>
-        <div className="h-[14rem] w-[14rem] bg-lightgray dark:bg-white shadow-xl animate-breathe rounded-full absolute right-[30%] top-[75%]"></div>
+        <div className="h-[9rem] w-[9rem] absolute right-[35%] top-[5%]">
+          <JsTechCircle />
+        </div>
+        <div className="h-[8rem] w-[8rem] absolute left-[10%] top-[20%]">
+          <DevOpsTechCircle />
+        </div>
+        <div className="h-[14rem] w-[14rem] p-4 absolute right-[40%] top-[65%]">
+          <CssTechCircle />
+        </div>
+        {/* <div className="h-[7rem] w-[7rem] p-4 border-dashed border-slate-200 border-2 dark:bg-white animate-breathe rounded-full absolute left-[10%] top-[25%]">
+          <img src={sassLogo} alt="tailwind logo" />
+        </div> */}
+        {/* <div className="h-[7rem] w-[7rem] p-6 border-dashed border-slate-200 border-2 dark:bg-white animate-breathe rounded-full absolute right-[20%] top-[35%]">
+          <img src={javascriptLogo} alt="tailwind logo" />
+        </div>
+        <div className="h-[10rem] w-[10rem] p-4 border-dashed border-slate-200 border-2 dark:bg-white animate-breathe rounded-full absolute left-[25%] top-[65%]">
+          <img src={tailwindLogo} alt="tailwind logo" />
+        </div> */}
       </section>
     </section>
   );

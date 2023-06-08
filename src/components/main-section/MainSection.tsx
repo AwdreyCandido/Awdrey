@@ -3,7 +3,7 @@ import React from "react";
 const MainSection = () => {
   return (
     <section
-      id="#projects"
+      id="projects"
       className=" flex-col w-full font-sora py-[11rem] border-b-2 border-slate-200 dark:border-[#363636] border-dashed "
     >
       <h1 className="text-header ml-[11rem] mb-4">I've been working on</h1>
