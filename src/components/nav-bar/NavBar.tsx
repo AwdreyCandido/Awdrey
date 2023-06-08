@@ -21,7 +21,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between text-base px-16 py-6 font-sora border-b border-b-slate-200 dark:border-b-[#363636] dark:text-golden ">
+    <nav className="flex items-center justify-between text-base px-16 py-6 font-sora border-b border-b-slate-200 dark:border-b-[#363636] ">
       <h4 className="flex items-center gap-8">
         <HiOutlineCode className="text-[2.5rem]" />
         Awdrey

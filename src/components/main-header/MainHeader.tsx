@@ -10,8 +10,8 @@ import {
 const MainHeader = () => {
   return (
     <section className="flex w-full h-fit font-sora">
-      <section className="flex items-center justify-end h-[60rem] w-full border-r-2 border-b-2 border-slate-200 dark:border-[#363636] border-dashed">
-        <div className="relative flex flex-col gap-8 w-[75%] right-[10%] ">
+      <section className="flex items-center h-[60rem] w-full border-r-2 border-b-2 border-slate-200 dark:border-[#363636] border-dashed">
+        <div className="relative flex flex-col gap-8 w-[75%] ml-[11rem]">
           <h1 className="text-header">
             HEY! <span className="font-semibold">I'm Awdrey</span>, A{" "}
             <span className="font-semibold">FRONT-END </span> DEVELOPER BASED IN
@@ -47,7 +47,7 @@ const MainHeader = () => {
         </div>
       </section>
       <section className="flex items-center h-[60rem] border-b-2 border-b-slate-200 dark:border-b-[#363636] border-dashed  w-full">
-        <div className="relative h-[45rem] w-[45rem] left-[15%] bg-slate-500 rounded-full"></div>
+        <div className="relative h-[45rem] w-[45rem] left-[15%] bg-[#e2e2e2]  dark:bg-white rounded-full"></div>
       </section>
     </section>
   );
