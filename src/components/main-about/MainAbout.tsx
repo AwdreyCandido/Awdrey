@@ -2,7 +2,7 @@ import React from "react";
 
 const MainAbout = () => {
   return (
-    <section className=" flex-col w-full font-sora py-[11rem] border-b-2 border-slate-200 dark:border-[#363636] border-dashed px-[11rem] ">
+    <section id="#about" className=" flex-col w-full font-sora py-[11rem] border-b-2 border-slate-200 dark:border-[#363636] border-dashed px-[11rem] ">
       <h1 className="text-header  mb-4">Who am I?</h1>
 
       <section className="flex w-full justify-between">
