@@ -2,8 +2,8 @@ import React from "react";
 
 const MainSection = () => {
   return (
-    <section className=" flex-col w-full font-sora py-[11rem] ">
-      <h1 className="text-header ml-[11rem]">I've been working on</h1>
+    <section className=" flex-col w-full font-sora py-[11rem] border-b-2 border-slate-200 dark:border-[#363636] border-dashed ">
+      <h1 className="text-header ml-[11rem] mb-4">I've been working on</h1>
 
       <section className="grid grid-cols-3 gap-x-[5rem] w-full px-[10rem]">
         <figure className=" col-span-2 w-full mt-[5rem]">
