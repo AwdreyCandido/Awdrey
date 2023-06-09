@@ -1,7 +1,7 @@
 import React from "react";
 import PrimaryButton from "../buttons/primary-button/PrimaryButton";
 
-import perfil from "./../../images/perfil.jpg";
+import { StaticImage } from "gatsby-plugin-image";
 
 import {
   AiOutlineGithub,
@@ -45,17 +45,23 @@ const MainHeader = () => {
                 Contact Me!
               </button>
             </a>
-            <a href="https://github.com/AwdreyCandido">
+            <a target="_blank" href="https://github.com/AwdreyCandido">
               <div className="h-[4.5rem] w-[4.5rem] text-[2.5rem] cursor-pointer flex items-center justify-center rounded-full border border-black-20 hover:bg-darkgray hover:text-darkwhite dark:text-white dark:border-[#363636] dark:hover:bg-darkwhite  dark:hover:text-darkgray duration-300">
                 <AiOutlineGithub />
               </div>
             </a>
-            <a href="https://www.linkedin.com/in/awdrey-candido-67b381221/">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/awdrey-candido-67b381221/"
+            >
               <div className="h-[4.5rem] w-[4.5rem] text-[2.5rem] cursor-pointer flex items-center justify-center rounded-full border border-black-20 hover:bg-darkgray hover:text-darkwhite dark:text-white dark:border-[#363636] dark:hover:bg-darkwhite  dark:hover:text-darkgray duration-300">
                 <AiOutlineLinkedin />
               </div>
             </a>
-            <a href="https://www.instagram.com/awdrey.candido/?next=%2F">
+            <a
+              target="_blank"
+              href="https://www.instagram.com/awdrey.candido/?next=%2F"
+            >
               <div className="h-[4.5rem] w-[4.5rem] text-[2.5rem] cursor-pointer flex items-center justify-center rounded-full border border-black-20 hover:bg-darkgray hover:text-darkwhite dark:text-white dark:border-[#363636] dark:hover:bg-darkwhite  dark:hover:text-darkgray duration-300">
                 <AiOutlineInstagram />
               </div>
@@ -65,9 +71,10 @@ const MainHeader = () => {
       </section>
       <section className="relative flex items-center justify-center h-[65rem] border-b-2 border-b-slate-200 dark:border-b-[#363636] border-dashed w-full">
         <div>
-          <img
+          <StaticImage
             className="relative h-[35rem] w-[35rem] md:h-[45rem] md:w-[45rem] xl:-left-[10%] bg-[#e2e2e2] object-cover grayscale dark:grayscale-0 dark:bg-white rounded-full"
-            src={perfil}
+            src="./../../images/perfil.jpg"
+            alt="my profile photo"
           />
         </div>
         <div className="h-[9rem] w-[9rem] scale-[.7] sm:scale-100 absolute  top-[10%] right-[35%] sm:top-[5%]">

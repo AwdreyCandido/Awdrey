@@ -52,23 +52,23 @@ const NavBar = () => {
             <div className="bg-black w-[1.6rem] h-[.3rem] top-0 left-[50%] -translate-x-[50%] rounded-xl absolute -z-10 mt-[0.3rem] invisible peer-hover:visible  peer-hover:top-[100%] duration-300 " />
           </li>
           <li className="relative hover:font-semibold duration-100">
-            <a href="/#about" className="peer bg-white dark:bg-darkgray">
+            <Link to="/#about" className="peer bg-white dark:bg-darkgray">
               About
-            </a>
+            </Link>
             <div className="bg-black w-[1.6rem] h-[.3rem] top-0 left-[50%] -translate-x-[50%] rounded-xl absolute -z-10 mt-[0.3rem] invisible peer-hover:visible  peer-hover:top-[100%] duration-300 " />
           </li>
           <li className="relative hover:font-semibold duration-100">
-            <a href="/#contact" className="peer bg-white dark:bg-darkgray">
+            <Link to="/#contact" className="peer bg-white dark:bg-darkgray">
               Contact
-            </a>
+            </Link>
             <div className="bg-black w-[1.6rem] h-[.3rem] top-0 left-[50%] -translate-x-[50%] rounded-xl absolute -z-10 mt-[0.3rem] invisible peer-hover:visible  peer-hover:top-[100%] duration-300 " />
           </li>
         </ul>
         <div className="hidden sm:flex gap-8">
           <Switch onChange={handleThemeSwitch} />
-          <a href="/#contact">
+          <Link to="/#contact">
             <PrimaryButton onClick={() => {}} title="Contact Me!" />
-          </a>
+          </Link>
         </div>
       </nav>
       <>
@@ -104,13 +104,13 @@ const NavBar = () => {
               onClick={handleToggleNavBar}
               className="relative hover:font-semibold duration-100"
             >
-              <a href="/#about">About</a>
+              <Link to="/#about">About</Link>
             </li>
             <li
               onClick={handleToggleNavBar}
               className="relative hover:font-semibold duration-100"
             >
-              <a href="/#contact">Contact</a>
+              <Link to="/#contact">Contact</Link>
             </li>
           </ul>
           {/* <div className="flex gap-6 text-base">

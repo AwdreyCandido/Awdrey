@@ -25,17 +25,23 @@ const MainFooter = () => {
         </h4>
         <p>© 2023. Awdrey Candido</p>
         <div className="flex gap-6 text-base">
-          <a href="https://github.com/AwdreyCandido">
+          <a target="_blank" href="https://github.com/AwdreyCandido">
             <div className="text-[2.5rem] cursor-pointer flex items-center justify-center dark:text-white">
               <AiOutlineGithub />
             </div>
           </a>
-          <a href="https://www.linkedin.com/in/awdrey-candido-67b381221/">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/awdrey-candido-67b381221/"
+          >
             <div className="text-[2.5rem] cursor-pointer flex items-center justify-center dark:text-white">
               <AiOutlineLinkedin />
             </div>
           </a>
-          <a href="https://www.instagram.com/awdrey.candido/?next=%2F">
+          <a
+            target="_blank"
+            href="https://www.instagram.com/awdrey.candido/?next=%2F"
+          >
             <div className="text-[2.5rem] cursor-pointer flex items-center justify-center dark:text-white">
               <AiOutlineInstagram />
             </div>
