@@ -6,12 +6,12 @@ const MainAbout = () => {
   return (
     <section
       id="about"
-      className=" flex-col w-full font-sora py-[11rem] border-b-2 border-slate-200 dark:border-[#363636] border-dashed px-[11rem] "
+      className="flex-col w-full font-sora py-[11rem] border-b-2 border-slate-200 dark:border-[#363636] border-dashed px-12 md:px-[10rem]"
     >
       <h1 className="text-header  mb-4">Who am I?</h1>
 
-      <section className="flex w-full justify-between">
-        <div className="flex flex-col gap-8 mt-[5rem] text-base w-[65%]">
+      <section className="flex flex-col xl:flex-row  w-full items-center xl:justify-between">
+        <div className="flex flex-col gap-8 mt-[5rem] text-base w-full lg:w-[80%] xl:w-[65%]">
           <p>
             My name is Awdrey Candido 😎. I am 22 years old, I live In
             Pernambuco, Brazil and I'm a self-taught Front-End developer. At the
@@ -33,12 +33,12 @@ const MainAbout = () => {
             you're really interested. Just contact me!
           </p>
         </div>
-        <div className="relative self-center">
-          <div className="w-[35rem] scale-[1.2] bg-[#e2e2e2] overflow-hidden dark:bg-white rounded-3xl">
+        <div className="relative self-center mt-[8rem] xl:mt-0">
+          <div className="w-[35rem] sm:scale-[1.2] bg-[#e2e2e2] overflow-hidden dark:bg-white rounded-3xl">
             <img
               src={cats}
               alt="me and some cats"
-              className="object-cover w-[50rem] grayscale dark:grayscale-0"
+              className="object-cover w-[40rem] grayscale dark:grayscale-0"
             />
           </div>
           <div className="absolute w-[40rem] left-[5%] top-[25%] -z-10 h-[20rem] border-2 border-dashed border-slate-200 dark:border-gray-border rounded-3xl"></div>

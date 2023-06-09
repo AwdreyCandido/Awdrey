@@ -10,7 +10,7 @@ import DevOpsTechCircle from "../../components/tech-circles/DevOpsTechCircle";
 
 const MainPage = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <NavBar />
       <MainHeader />
       <MainSection />

@@ -14,9 +14,9 @@ import DevOpsTechCircle from "../tech-circles/DevOpsTechCircle";
 
 const MainHeader = () => {
   return (
-    <section className="flex w-full h-fit font-sora">
-      <section className="flex items-center h-[60rem] w-full border-r-2 border-b-2 border-slate-200 dark:border-[#363636] border-dashed">
-        <div className="relative flex flex-col gap-8 w-[75%] ml-[11rem]">
+    <section className="flex flex-col lg:flex-row w-full h-fit font-sora">
+      <section className="flex items-center justify-center xl:justify-normal h-[65rem] w-full border-r-2 border-b-2 border-slate-200 dark:border-[#363636] border-dashed">
+        <div className="relative flex flex-col gap-8 w-[80%] sm:w-[76%] xl:ml-[11rem]">
           <h1 className="text-header">
             HEY!{" "}
             <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
@@ -32,14 +32,14 @@ const MainHeader = () => {
               BRAZIL
             </span>
           </h1>
-          <p className="text-base">
+          <p className="text-base my-4">
             By being a Front-End developer basically means that I can create
             beautiful and attractive screens 😳...
           </p>
-          <div className="flex gap-6 text-base">
+          <div className="flex bg-blue-400 gap-6 text-base">
             <a href="/#contact">
               <button
-                className="px-12 py-4 bg-[#171717] hover:bg-darkwhite hover:text-darkgray dark:bg-transparent border dark:border-gray-border border-darkwhite  dark:hover:bg-darkwhite  dark:hover:text-darkgray text-white rounded-full duration-300"
+                className=" px-8 sm:px-12 py-4 text-[1.4rem] sm:text-base bg-[#171717] hover:bg-darkwhite hover:text-darkgray dark:bg-transparent border dark:border-gray-border border-darkwhite  dark:hover:bg-darkwhite  dark:hover:text-darkgray text-white rounded-full duration-300"
                 onClick={() => {}}
               >
                 Contact Me!
@@ -63,20 +63,20 @@ const MainHeader = () => {
           </div>
         </div>
       </section>
-      <section className="relative flex items-center h-[60rem] border-b-2 border-b-slate-200 dark:border-b-[#363636] border-dashed  w-full">
+      <section className="relative flex items-center justify-center h-[65rem] border-b-2 border-b-slate-200 dark:border-b-[#363636] border-dashed w-full">
         <div>
           <img
-            className="relative h-[45rem] w-[45rem] left-[15%] bg-[#e2e2e2] object-cover grayscale dark:grayscale-0 dark:bg-white rounded-full"
+            className="relative h-[35rem] w-[35rem] md:h-[45rem] md:w-[45rem] xl:-left-[10%] bg-[#e2e2e2] object-cover grayscale dark:grayscale-0 dark:bg-white rounded-full"
             src={perfil}
           />
         </div>
-        <div className="h-[9rem] w-[9rem] absolute right-[35%] top-[5%]">
+        <div className="h-[9rem] w-[9rem] scale-[.7] sm:scale-100 absolute  top-[10%] right-[35%] sm:top-[5%]">
           <JsTechCircle />
         </div>
-        <div className="h-[8rem] w-[8rem] absolute left-[10%] top-[20%]">
+        <div className="h-[8rem] w-[8rem] scale-[.7] sm:scale-100 absolute left-[10%] top-[20%]">
           <DevOpsTechCircle />
         </div>
-        <div className="h-[14rem] w-[14rem] p-4 absolute right-[40%] top-[65%]">
+        <div className="h-[14rem] w-[14rem] scale-[.7] sm:scale-100 p-4 absolute right-[40%] top-[65%]">
           <CssTechCircle />
         </div>
         {/* <div className="h-[7rem] w-[7rem] p-4 border-dashed border-slate-200 border-2 dark:bg-white animate-breathe rounded-full absolute left-[10%] top-[25%]">

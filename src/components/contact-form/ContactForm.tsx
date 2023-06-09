@@ -3,7 +3,7 @@ import React from "react";
 const ContactForm = () => {
   return (
     <form
-      className="flex flex-col text-tertiary-h w-[40vw] gap-20"
+      className="flex flex-col text-tertiary-h w-[80vw] lg:w-[60vw]  xl:w-[40vw] gap-20 "
       action="https://api.staticforms.xyz/submit"
       method="post"
     >
@@ -12,7 +12,7 @@ const ContactForm = () => {
         name="accessKey"
         value="c081665d-5081-4a3b-8aab-c698ece254c7"
       />
-      <div className="flex justify-between gap-12">
+      <div className="flex flex-col sm:flex-row justify-between gap-12">
         <div className="flex flex-col gap-4 w-full">
           <label>What's your name?</label>
           <input
@@ -41,7 +41,7 @@ const ContactForm = () => {
           rows={2}
           maxLength={100}
           required
-          placeholder=""
+          placeholder="Tell me..."
           className="focus:outline-none bg-transparent text-base p-4 border-b-2 border-slate-300 resize-none"
         ></textarea>
       </div>
