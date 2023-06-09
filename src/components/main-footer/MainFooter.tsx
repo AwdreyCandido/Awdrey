@@ -14,9 +14,7 @@ const MainFooter = () => {
   };
 
   return (
-    <section className="flex flex-col w-full font-sora pt-[11rem] pb-[3rem] border-b-2 border-slate-200 dark:border-[#363636] border-dashed">
-      <h1 className="text-header  mb-8 text-center sm:text-start">Let's work together?</h1>
-      <MainContact />
+    <section className="flex flex-col w-full font-sora pb-[3rem] border-b-2 border-slate-200 dark:border-[#363636] border-dashed">
       <div className="flex flex-col-reverse sm:flex-row gap-12 sm:gap-0 items-center w-full justify-between mt-[8rem] sm:px-16 pt-12 font-sora border-dashed border-t-2 border-t-slate-200 dark:border-t-[#363636] ">
         <h4
           onClick={scrollToTop}

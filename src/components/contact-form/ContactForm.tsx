@@ -1,9 +1,10 @@
 import React from "react";
+import { HiOutlineArrowUpRight } from "react-icons/hi2";
 
 const ContactForm = () => {
   return (
     <form
-      className="flex flex-col text-tertiary-h w-[80vw] lg:w-[60vw]  xl:w-[40vw] gap-20 "
+      className="flex flex-col font-sora text-tertiary-h w-[80vw] lg:w-[60vw]  xl:w-[40vw] gap-20 "
       action="https://api.staticforms.xyz/submit"
       method="post"
     >
@@ -52,7 +53,9 @@ const ContactForm = () => {
         name="redirectTo"
         value="https://example.com/contact/success"
     /> */}
-      <button className="py-3" type="submit" >Send it</button>
+      <button className="group py-3 text-primary-h font-medium flex justify-center items-center gap-4" type="submit">
+        Send it <HiOutlineArrowUpRight className="group-hover:translate-x-2 group-hover:-translate-y-3 stroke-[2.5] duration-300" />
+      </button>
     </form>
   );
 };

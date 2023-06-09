@@ -15,7 +15,7 @@ import DevOpsTechCircle from "../tech-circles/DevOpsTechCircle";
 const MainHeader = () => {
   return (
     <section className="flex flex-col lg:flex-row w-full h-fit font-sora">
-      <section className="flex items-center justify-center xl:justify-normal h-[65rem] w-full border-r-2 border-b-2 border-slate-200 dark:border-[#363636] border-dashed">
+      <section className="flex items-center justify-center xl:justify-normal h-[65rem] w-full lg:border-r-2 border-b-2 border-slate-200 dark:border-[#363636] border-dashed">
         <div className="relative flex flex-col gap-8 w-[80%] sm:w-[76%] xl:ml-[11rem]">
           <h1 className="text-header">
             HEY!{" "}
@@ -36,7 +36,7 @@ const MainHeader = () => {
             By being a Front-End developer basically means that I can create
             beautiful and attractive screens 😳...
           </p>
-          <div className="flex bg-blue-400 gap-6 text-base">
+          <div className="flex gap-6 text-base">
             <a href="/#contact">
               <button
                 className=" px-8 sm:px-12 py-4 text-[1.4rem] sm:text-base bg-[#171717] hover:bg-darkwhite hover:text-darkgray dark:bg-transparent border dark:border-gray-border border-darkwhite  dark:hover:bg-darkwhite  dark:hover:text-darkgray text-white rounded-full duration-300"

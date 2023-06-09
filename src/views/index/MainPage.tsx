@@ -7,6 +7,7 @@ import MainFooter from "../../components/main-footer/MainFooter";
 import JsTechCircle from "../../components/tech-circles/JsTechCircle";
 import CssTechCircle from "../../components/tech-circles/CssTechCircle";
 import DevOpsTechCircle from "../../components/tech-circles/DevOpsTechCircle";
+import MainContact from "../../components/main-contact/MainContact";
 
 const MainPage = () => {
   return (
@@ -15,6 +16,7 @@ const MainPage = () => {
       <MainHeader />
       <MainSection />
       <MainAbout />
+      <MainContact />
       <MainFooter />
     </div>
   );
