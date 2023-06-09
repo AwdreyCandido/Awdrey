@@ -43,24 +43,26 @@ const MainHeader = () => {
             dignissimos quasi architecto dolorum
           </p>
           <div className="flex gap-6 text-base">
-            <button
-              className="px-12 py-4 bg-[#171717] dark:bg-transparent dark:border text-white rounded-full"
-              onClick={() => {}}
-            >
-              Entre em contato
-            </button>
+            <a href="/#contact">
+              <button
+                className="px-12 py-4 bg-[#171717] hover:bg-darkwhite hover:text-darkgray outline outline-2 dark:bg-transparent dark:border dark:hover:bg-darkwhite  dark:hover:text-darkgray text-white rounded-full duration-300"
+                onClick={() => {}}
+              >
+                Contact Me!
+              </button>
+            </a>
             <a href="https://github.com/AwdreyCandido">
-              <div className="h-[4.5rem] w-[4.5rem] text-[2.5rem] cursor-pointer flex items-center justify-center rounded-full border border-black-20 dark:text-white dark:border-[#363636]">
+              <div className="h-[4.5rem] w-[4.5rem] text-[2.5rem] cursor-pointer flex items-center justify-center rounded-full border border-black-20 hover:bg-darkgray hover:text-darkwhite dark:text-white dark:border-[#363636] dark:hover:bg-darkwhite  dark:hover:text-darkgray duration-300">
                 <AiOutlineGithub />
               </div>
             </a>
             <a href="https://www.linkedin.com/in/awdrey-candido-67b381221/">
-              <div className="h-[4.5rem] w-[4.5rem] text-[2.5rem] cursor-pointer flex items-center justify-center rounded-full border border-black-20 dark:text-white dark:border-[#363636]">
+              <div className="h-[4.5rem] w-[4.5rem] text-[2.5rem] cursor-pointer flex items-center justify-center rounded-full border border-black-20 hover:bg-darkgray hover:text-darkwhite dark:text-white dark:border-[#363636] dark:hover:bg-darkwhite  dark:hover:text-darkgray duration-300">
                 <AiOutlineLinkedin />
               </div>
             </a>
             <a href="https://www.instagram.com/awdrey.candido/?next=%2F">
-              <div className="h-[4.5rem] w-[4.5rem] text-[2.5rem] cursor-pointer flex items-center justify-center rounded-full border border-black-20 dark:text-white dark:border-[#363636]">
+              <div className="h-[4.5rem] w-[4.5rem] text-[2.5rem] cursor-pointer flex items-center justify-center rounded-full border border-black-20 hover:bg-darkgray hover:text-darkwhite dark:text-white dark:border-[#363636] dark:hover:bg-darkwhite  dark:hover:text-darkgray duration-300">
                 <AiOutlineInstagram />
               </div>
             </a>

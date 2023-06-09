@@ -1,4 +1,5 @@
 import React from "react";
+import { HiOutlineMoon, HiOutlineSun } from "react-icons/hi";
 
 type SwitchProps = {
   onChange: () => void;
@@ -13,7 +14,11 @@ const Switch: React.FC<SwitchProps> = (props) => {
         value=""
         className="sr-only peer"
       ></input>
-      <div className={`w-[4.5rem] h-[2.5rem] bg-gray-200 peer-focus:outline-none rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[50%] after:-translate-y-[50%] after:left-[3px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-[1.8rem] after:w-[1.9rem] after:transition-all dark:border-gray-600 peer-checked:bg-blue-600`}></div>
+      <div
+        className={`w-[4.5rem] h-[2.5rem] bg-gray-200 peer-focus:outline-none rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white dark:border-gray-600 peer-checked:bg-gray-border peer-checked:border`}
+      ></div>
+      <HiOutlineSun className="absolute peer-checked:invisible peer-checked:translate-x-full top-[50%] -translate-y-[50%] left-[3px] bg-darkwhite border-gray-300 border rounded-full h-[1.8rem] w-[1.9rem] transition-all text-yellow-400 " />
+      <HiOutlineMoon className="absolute invisible peer-checked:visible rounded-full h-[1.8rem] w-[1.9rem] top-[50%] -translate-y-[50%] translate-x-full left-[3px] bg-darkwhite text-darkgray" />
     </label>
   );
 };

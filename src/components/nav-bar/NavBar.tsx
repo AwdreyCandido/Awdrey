@@ -48,7 +48,9 @@ const NavBar = () => {
       </ul>
       <div className="flex gap-8">
         <Switch onChange={handleThemeSwitch} />
-        <PrimaryButton onClick={() => {}} title="Hire Me!" />
+        <a href="/#contact">
+        <PrimaryButton onClick={() => {}} title="Contact Me!" />
+        </a>
       </div>
     </nav>
   );
