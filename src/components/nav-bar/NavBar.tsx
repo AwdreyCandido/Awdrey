@@ -13,7 +13,7 @@ import {
 
 const NavBar = () => {
   const [theme, setTheme] = useState<string>("light");
-  const [showNavBar, setShowNavBar] = useState<boolean>(true);
+  const [showNavBar, setShowNavBar] = useState<boolean>(false);
 
   useEffect(() => {
     if (theme === "dark") {

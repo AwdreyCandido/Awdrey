@@ -1,6 +1,7 @@
 import React from "react";
 
 import cats from "./../../images/cats.jpeg";
+import { StaticImage } from "gatsby-plugin-image";
 
 const MainAbout = () => {
   return (
@@ -35,10 +36,10 @@ const MainAbout = () => {
         </div>
         <div className="relative self-center mt-[8rem] xl:mt-0">
           <div className="w-[35rem] sm:scale-[1.2] bg-[#e2e2e2] overflow-hidden dark:bg-white rounded-3xl">
-            <img
-              src={cats}
+            <StaticImage
+              src="./../../images/cats.jpeg"
               alt="me and some cats"
-              className="object-cover w-[40rem] grayscale dark:grayscale-0"
+              className="object-cover w-[35rem] grayscale dark:grayscale-0"
             />
           </div>
           <div className="absolute w-[40rem] left-[5%] top-[25%] -z-10 h-[20rem] border-2 border-dashed border-slate-200 dark:border-gray-border rounded-3xl"></div>

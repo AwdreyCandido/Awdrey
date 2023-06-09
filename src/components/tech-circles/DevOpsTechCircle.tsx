@@ -4,6 +4,8 @@ import mysqlLogo from "./../../images/mysql.png";
 import gitLogo from "./../../images/git.png";
 import dockerLogo from "./../../images/docker.png";
 
+import { StaticImage } from "gatsby-plugin-image";
+
 const DevOpsTechCircle = () => {
   return (
     <section className="relative w-min">
@@ -16,23 +18,23 @@ const DevOpsTechCircle = () => {
           />
         </div> */}
         <div className="absolute  top-0 left-[50%] -translate-x-[50%] -translate-y-[50%] h-[6rem] w-[6rem] p-4  border-2 border-dashed border-slate-300 dark:border-gray-border rounded-full">
-          <img
-            src={gitLogo}
-            alt="tailwind logo"
+          <StaticImage
+            src="./../../images/git.png"
+            alt="git logo"
             className=" drop-shadow-2xl animate-rotate-back"
           />
         </div>
         <div className="absolute  top-[50%] left-0  -translate-x-[50%]  h-[8rem] w-[8rem] p-6  border-2 border-dashed border-slate-300 dark:border-gray-border rounded-full ">
-          <img
-            src={mysqlLogo}
-            alt="tailwind logo"
+          <StaticImage
+            src="./../../images/mysql.png"
+            alt="mysql logo"
             className=" drop-shadow-2xl animate-rotate-back"
           />
         </div>
         <div className="absolute  top-[50%] left-[100%] -translate-x-[50%] h-[7rem] w-[7rem] p-6  border-2 border-dashed border-slate-300 dark:border-gray-border rounded-full">
-          <img
-            src={dockerLogo}
-            alt="tailwind logo"
+          <StaticImage
+            src="./../../images/docker.png"
+            alt="docker logo"
             className=" drop-shadow-2xl animate-rotate-back"
           />
         </div>
