@@ -1,13 +1,7 @@
 import React from "react";
 import PrimaryButton from "../buttons/primary-button/PrimaryButton";
 
-import reactLogo from "./../../images/react.png";
-import reactNativeLogo from "./../../images/react-native.png";
-import javascriptLogo from "./../../images/javascript.png";
-import sassLogo from "./../../images/sass.png";
-import typescriptLogo from "./../../images/typescript.png";
-import tailwindLogo from "./../../images/tailwind.png";
-import dockerLogo from "./../../images/docker.png";
+import perfil from "./../../images/perfil.jpg";
 
 import {
   AiOutlineGithub,
@@ -39,13 +33,13 @@ const MainHeader = () => {
             </span>
           </h1>
           <p className="text-base">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-            dignissimos quasi architecto dolorum
+            By being a Front-End developer basically means that I can create
+            beautiful and attractive screens 😳...
           </p>
           <div className="flex gap-6 text-base">
             <a href="/#contact">
               <button
-                className="px-12 py-4 bg-[#171717] hover:bg-darkwhite hover:text-darkgray outline outline-2 dark:bg-transparent dark:border dark:hover:bg-darkwhite  dark:hover:text-darkgray text-white rounded-full duration-300"
+                className="px-12 py-4 bg-[#171717] hover:bg-darkwhite hover:text-darkgray dark:bg-transparent border dark:border-gray-border border-darkwhite  dark:hover:bg-darkwhite  dark:hover:text-darkgray text-white rounded-full duration-300"
                 onClick={() => {}}
               >
                 Contact Me!
@@ -70,7 +64,12 @@ const MainHeader = () => {
         </div>
       </section>
       <section className="relative flex items-center h-[60rem] border-b-2 border-b-slate-200 dark:border-b-[#363636] border-dashed  w-full">
-        <div className="relative h-[45rem] w-[45rem] left-[15%] bg-[#e2e2e2]  dark:bg-white rounded-full"></div>
+        <div>
+          <img
+            className="relative h-[45rem] w-[45rem] left-[15%] bg-[#e2e2e2] object-cover grayscale dark:grayscale-0 dark:bg-white rounded-full"
+            src={perfil}
+          />
+        </div>
         <div className="h-[9rem] w-[9rem] absolute right-[35%] top-[5%]">
           <JsTechCircle />
         </div>
