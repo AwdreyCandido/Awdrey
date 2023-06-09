@@ -8,6 +8,7 @@
     "gatsby"
   ],
   "scripts": {
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
@@ -18,8 +19,8 @@
   "dependencies": {
     "@types/react-icons": "^3.0.0",
     "gatsby": "^5.10.0",
-    "gatsby-plugin-image": "^3.10.0",
     "gatsby-plugin-google-gtag": "^5.9.0",
+    "gatsby-plugin-image": "^3.10.0",
     "gatsby-plugin-manifest": "^5.9.0",
     "gatsby-plugin-sass": "^6.9.0",
     "gatsby-plugin-sharp": "^5.10.0",
@@ -36,6 +37,7 @@
     "@types/react-dom": "^18.2.4",
     "autoprefixer": "^10.4.14",
     "gatsby-plugin-postcss": "^6.10.0",
+    "gh-pages": "^5.0.0",
     "postcss": "^8.4.24",
     "tailwindcss": "^3.3.2",
     "typescript": "^5.1.3"
