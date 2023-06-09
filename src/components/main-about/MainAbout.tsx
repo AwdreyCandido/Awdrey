@@ -1,8 +1,13 @@
 import React from "react";
 
+import cats from "./../../images/cats.jpeg";
+
 const MainAbout = () => {
   return (
-    <section id="about" className=" flex-col w-full font-sora py-[11rem] border-b-2 border-slate-200 dark:border-[#363636] border-dashed px-[11rem] ">
+    <section
+      id="about"
+      className=" flex-col w-full font-sora py-[11rem] border-b-2 border-slate-200 dark:border-[#363636] border-dashed px-[11rem] "
+    >
       <h1 className="text-header  mb-4">Who am I?</h1>
 
       <section className="flex w-full justify-between">
@@ -28,8 +33,15 @@ const MainAbout = () => {
             you're really interested. Just contact me!
           </p>
         </div>
-        <div className="self-center">
-          <div className="h-[25rem] w-[35rem] bg-[#e2e2e2] dark:bg-white rounded-3xl"></div>
+        <div className="relative self-center">
+          <div className="w-[35rem] scale-[1.2] bg-[#e2e2e2] overflow-hidden dark:bg-white rounded-3xl">
+            <img
+              src={cats}
+              alt="me and some cats"
+              className="object-cover w-[50rem] grayscale dark:grayscale-0"
+            />
+          </div>
+          <div className="absolute w-[40rem] left-[5%] top-[25%] -z-10 h-[20rem] border-2 border-dashed border-slate-200 dark:border-gray-border rounded-3xl"></div>
         </div>
       </section>
     </section>
