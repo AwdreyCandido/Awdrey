@@ -16,7 +16,7 @@ const MainHeader = () => {
   return (
     <section className="flex flex-col lg:flex-row w-full h-fit font-sora">
       <section className="flex items-center justify-center xl:justify-normal h-[65rem] w-full lg:border-r-2 border-b-2 border-slate-200 dark:border-[#363636] border-dashed">
-        <div className="relative flex flex-col gap-8 w-[80%] sm:w-[76%] xl:ml-[11rem]">
+        <div className="relative flex flex-col gap-8 w-[85%] sm:w-[76%] xl:ml-[11rem]">
           <h1 className="text-header">
             HEY!{" "}
             <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">

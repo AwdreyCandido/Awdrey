@@ -79,7 +79,7 @@ const NavBar = () => {
           ></div>
         )}
         <nav
-          className={`sm:hidden fixed top-0 z-[1000] p-8 text-quaternary-h duration-300 h-screen w-[40%] bg-darkwhite dark:bg-darkgray shadow-input ${
+          className={`sm:hidden fixed top-0 z-[1000] p-8 text-quaternary-h duration-300 h-screen w-[45%] bg-darkwhite dark:bg-darkgray shadow-input ${
             showNavBar ? " translate-x-0" : " -translate-x-full"
           }`}
         >
