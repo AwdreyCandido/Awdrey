@@ -34,10 +34,12 @@ const NavBar = () => {
   return (
     <>
       <nav className="flex items-center justify-between md:text-base px-16 py-6 font-sora border-b border-b-slate-200 dark:border-b-[#363636] ">
-        <h4 className="flex items-center gap-8">
-          <HiOutlineCode className="text-[2.5rem]" />
-          Awdrey
-        </h4>
+        <Link to="/">
+          <h4 className="flex items-center gap-8">
+            <HiOutlineCode className="text-[2.5rem]" />
+            Awdrey
+          </h4>
+        </Link>
         <button
           onClick={handleToggleNavBar}
           className="inline sm:hidden text-[3rem] focus:ring-gray-border focus:ring-2 ring-inset-4 rounded-lg"
@@ -79,7 +81,7 @@ const NavBar = () => {
           ></div>
         )}
         <nav
-          className={`sm:hidden fixed top-0 z-[1000] p-8 text-quaternary-h duration-300 h-screen w-[45%] bg-darkwhite dark:bg-darkgray shadow-input ${
+          className={`sm:hidden fixed top-0 font-sora z-[1000] p-8 text-quaternary-h duration-300 h-screen w-[45%] bg-darkwhite dark:bg-darkgray shadow-input ${
             showNavBar ? " translate-x-0" : " -translate-x-full"
           }`}
         >

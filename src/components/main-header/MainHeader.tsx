@@ -11,13 +11,14 @@ import {
 import JsTechCircle from "../tech-circles/JsTechCircle";
 import CssTechCircle from "../tech-circles/CssTechCircle";
 import DevOpsTechCircle from "../tech-circles/DevOpsTechCircle";
+import { Link } from "gatsby";
 
 const MainHeader = () => {
   return (
     <section className="flex flex-col lg:flex-row w-full h-fit font-sora">
-      <section className="flex items-center justify-center xl:justify-normal h-[65rem] w-full lg:border-r-2 border-b-2 border-slate-200 dark:border-[#363636] border-dashed">
+      <section className="flex items-center justify-center xl:justify-normal h-[50rem] sm:h-[65rem] w-full lg:border-r-2 border-b-2 border-slate-200 dark:border-[#363636] border-dashed">
         <div className="relative flex flex-col gap-8 w-[85%] sm:w-[76%] xl:ml-[11rem]">
-          <h1 className="text-header">
+          <h1 className="text-primary-h sm:text-header">
             HEY!{" "}
             <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               I'm Awdrey
@@ -36,15 +37,15 @@ const MainHeader = () => {
             By being a Front-End developer basically means that I can create
             beautiful and attractive screens 😳...
           </p>
-          <div className="flex gap-6 text-base">
-            <a href="/#contact">
+          <div className="flex justify-between sm:justify-normal gap-6 text-base">
+            <Link to="/#contact" className="w-full sm:w-fit">
               <button
-                className=" px-8 sm:px-12 py-4 text-[1.4rem] sm:text-base bg-[#171717] hover:bg-darkwhite hover:text-darkgray dark:bg-transparent border dark:border-gray-border border-darkwhite  dark:hover:bg-darkwhite  dark:hover:text-darkgray text-white rounded-full duration-300"
+                className=" px-8 sm:px-12 w-full sm:w-fit py-4 text-[1.4rem] sm:text-base bg-[#171717] hover:bg-darkwhite hover:text-darkgray dark:bg-transparent border dark:border-gray-border border-darkwhite  dark:hover:bg-darkwhite  dark:hover:text-darkgray text-white rounded-full duration-300"
                 onClick={() => {}}
               >
                 Contact Me!
               </button>
-            </a>
+            </Link>
             <a target="_blank" href="https://github.com/AwdreyCandido">
               <div className="h-[4.5rem] w-[4.5rem] text-[2.5rem] cursor-pointer flex items-center justify-center rounded-full border border-black-20 hover:bg-darkgray hover:text-darkwhite dark:text-white dark:border-[#363636] dark:hover:bg-darkwhite  dark:hover:text-darkgray duration-300">
                 <AiOutlineGithub />

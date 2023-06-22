@@ -1,6 +1,4 @@
 import React from "react";
-
-import cats from "./../../images/cats.jpeg";
 import { StaticImage } from "gatsby-plugin-image";
 
 const MainAbout = () => {
