@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmeu_site=self.webpackChunkmeu_site||[]).push([[972],{8124:function(e,u,t){t.r(u),t.d(u,{default:function(){return n}});t(7294),t(1726);var n=()=>{}}}]);
+//# sourceMappingURL=component---src-pages-projects-gestor-politico-mangrover-index-tsx-94cb78fb4a40cef290c2.js.map
