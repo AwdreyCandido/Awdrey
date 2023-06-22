@@ -7,7 +7,7 @@ const LandingMangrover = () => {
   return (
     <PageLayout>
       <section className=" flex-col w-full font-sora py-[11rem] border-b-2 border-slate-200 dark:border-gray-border border-dashed px-12 md:px-[10rem]">
-        <section className="grid  place-content-center lg:grid-cols-2 gap-x-[5rem] w-full bg-red-400">
+        <section className="grid place-content-center lg:grid-cols-2 gap-x-[5rem] w-full bg-red-400">
           <figure className="flex flex-col gap-8 text-base w-full">
             <h2 className="text-primary-h mb-8">Site Mangrover</h2>
 
@@ -41,7 +41,7 @@ const LandingMangrover = () => {
               deadlines.
             </p>
           </figure>
-          <figure className="w-full">
+          <figure className="w-full order-1 mt-[5rem] lg:mt-0">
             <Link to="https://mangrover.com.br/" target="_blank">
               <div className="relative h-[60rem] border-2 border-dashed overflow-hidden border-slate-200 dark:border-gray-border rounded-3xl">
                 <StaticImage

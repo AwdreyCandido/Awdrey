@@ -12,8 +12,16 @@ import {
 } from "react-icons/ai";
 
 const NavBar = () => {
-  const [theme, setTheme] = useState<string>("light");
+  const [theme, setTheme] = useState<string | null>(null);
   const [showNavBar, setShowNavBar] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  }, []);
 
   useEffect(() => {
     if (theme === "dark") {
@@ -31,6 +39,25 @@ const NavBar = () => {
     setShowNavBar(!showNavBar);
   };
 
+  function goToForm() {
+    setTimeout(() => {
+      const form = document.getElementById("contact");
+      form?.scrollIntoView();
+    }, 300);
+  }
+  function goToProjects() {
+    setTimeout(() => {
+      const form = document.getElementById("projects");
+      form?.scrollIntoView();
+    }, 300);
+  }
+  function goToAbout() {
+    setTimeout(() => {
+      const form = document.getElementById("about");
+      form?.scrollIntoView();
+    }, 300);
+  }
+
   return (
     <>
       <nav className="flex items-center justify-between md:text-base px-16 py-6 font-sora border-b border-b-slate-200 dark:border-b-[#363636] ">
@@ -47,20 +74,26 @@ const NavBar = () => {
           <CgMenuRight />
         </button>
         <ul className="hidden sm:flex gap-6 md:gap-12">
-          <li className="relative hover:font-semibold duration-100">
+          <li
+            onClick={goToProjects}
+            className="relative hover:font-semibold duration-100"
+          >
             <Link to="/#projects" className="peer bg-white dark:bg-darkgray">
               Projects
             </Link>
             <div className="bg-black w-[1.6rem] h-[.3rem] top-0 left-[50%] -translate-x-[50%] rounded-xl absolute -z-10 mt-[0.3rem] invisible peer-hover:visible  peer-hover:top-[100%] duration-300 " />
           </li>
-          <li className="relative hover:font-semibold duration-100">
+          <li
+            onClick={goToAbout}
+            className="relative hover:font-semibold duration-100"
+          >
             <Link to="/#about" className="peer bg-white dark:bg-darkgray">
               About
             </Link>
             <div className="bg-black w-[1.6rem] h-[.3rem] top-0 left-[50%] -translate-x-[50%] rounded-xl absolute -z-10 mt-[0.3rem] invisible peer-hover:visible  peer-hover:top-[100%] duration-300 " />
           </li>
           <li className="relative hover:font-semibold duration-100">
-            <Link to="/#contact" className="peer bg-white dark:bg-darkgray">
+            <Link to="#contact" className="peer bg-white dark:bg-darkgray">
               Contact
             </Link>
             <div className="bg-black w-[1.6rem] h-[.3rem] top-0 left-[50%] -translate-x-[50%] rounded-xl absolute -z-10 mt-[0.3rem] invisible peer-hover:visible  peer-hover:top-[100%] duration-300 " />
@@ -69,7 +102,7 @@ const NavBar = () => {
         <div className="hidden sm:flex gap-8">
           <Switch onChange={handleThemeSwitch} />
           <Link to="/#contact">
-            <PrimaryButton onClick={() => {}} title="Contact Me!" />
+            <PrimaryButton onClick={goToForm} title="Contact Me!" />
           </Link>
         </div>
       </nav>
@@ -81,7 +114,7 @@ const NavBar = () => {
           ></div>
         )}
         <nav
-          className={`sm:hidden fixed top-0 font-sora z-[1000] p-8 text-quaternary-h duration-300 h-screen w-[45%] bg-darkwhite dark:bg-darkgray shadow-input ${
+          className={`sm:hidden fixed top-0 font-sora z-[1000] p-8 text-quaternary-h duration-300 h-screen w-[50%] bg-darkwhite dark:bg-darkgray shadow-input ${
             showNavBar ? " translate-x-0" : " -translate-x-full"
           }`}
         >
@@ -97,19 +130,25 @@ const NavBar = () => {
           <hr className="mb-8" />
           <ul className="flex flex-col gap-6">
             <li
-              onClick={handleToggleNavBar}
+              onClick={() => {
+                handleToggleNavBar(), goToProjects();
+              }}
               className="relative hover:font-semibold duration-100"
             >
               <Link to="/#projects">Projects</Link>
             </li>
             <li
-              onClick={handleToggleNavBar}
+              onClick={() => {
+                handleToggleNavBar(), goToAbout();
+              }}
               className="relative hover:font-semibold duration-100"
             >
               <Link to="/#about">About</Link>
             </li>
             <li
-              onClick={handleToggleNavBar}
+              onClick={() => {
+                handleToggleNavBar();
+              }}
               className="relative hover:font-semibold duration-100"
             >
               <Link to="/#contact">Contact</Link>
